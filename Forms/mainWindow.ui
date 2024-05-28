@@ -62,8 +62,32 @@ QPushButton {
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
       <widget class="QToolBox" name="toolBox">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolBox QPushButton {
+    color: #fff
+}
+
+QToolBox QPushButton:focus {
+    background-color: #0b5ed7;
+    
+}
+
+QToolBox QPushButton: pressed {
+    background-color: #fff;
+    color: #000000
+}</string>
+       </property>
        <property name="currentIndex">
         <number>0</number>
+       </property>
+       <property name="tabSpacing">
+        <number>6</number>
        </property>
        <widget class="QWidget" name="page">
         <property name="geometry">
@@ -74,8 +98,11 @@ QPushButton {
           <height>379</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <attribute name="label">
-         <string>General</string>
+         <string>Страница 1</string>
         </attribute>
         <widget class="QWidget" name="verticalLayoutWidget">
          <property name="geometry">
@@ -89,78 +116,149 @@ QPushButton {
          <layout class="QVBoxLayout" name="verticalLayout">
           <item>
            <widget class="QPushButton" name="pushButton_13">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Главная</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    
+}</string>
+            </property>
             <property name="text">
              <string>Посмотреть все onu</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_2">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Посмотреть onu на №SFP</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_3">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Состояние SFP</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_4">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Не привязанные ONU</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_5">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Информация по порту</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_6">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Оптический сигнал ONU</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_7">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Оптический сигнал ONU...</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_8">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Обратный уровень ...</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_9">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Обратный уровень...</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_10">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Время работы ONU</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -177,7 +275,7 @@ QPushButton {
          </rect>
         </property>
         <attribute name="label">
-         <string>Page 2</string>
+         <string>Страница 2</string>
         </attribute>
         <widget class="QWidget" name="verticalLayoutWidget_2">
          <property name="geometry">
@@ -191,57 +289,105 @@ QPushButton {
          <layout class="QVBoxLayout" name="verticalLayout_2">
           <item>
            <widget class="QPushButton" name="pushButton_11">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Время работы ONU на всей SFP</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_12">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Вкл/выкл CATV</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_14">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Настроенные/онлайн</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_16">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Активность медных портов...</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_15">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Мас с 1 порта ONU</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_20">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>ip на ONU</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_18">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Перезагрузка</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_19">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="text">
              <string>Вкл/выкл медный порт</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
             </property>
            </widget>
           </item>

@@ -8,13 +8,13 @@ import sys
 class MyWindow(QtWidgets.QWidget):
     def __init__(self):
      super(MyWindow, self).__init__()
-     self.ui = Ui_Form()
+     self.ui = Ui_MainWindow()
      self.ui.setupUi(self)
      
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
-    ex = Ui_Form()
+    ex = Ui_MainWindow()
     w = QtWidgets.QMainWindow()
     ex.setupUi(w)
     w.show()
