@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        
+        MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 450)
         MainWindow.setStyleSheet("QWidget {\n"
 "   background-color: #70a932\n"

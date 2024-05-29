@@ -24,10 +24,10 @@ QPushButton {
    font-weight: 600
 }
 
-
+QPushButton:hover,
 QPushButton:pressed {
    background-color: #fff;
-   color: #000000
+   color: #70a932
 }
 
 QLineEdit {
@@ -69,18 +69,21 @@ QPushButton {
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">QToolBox QPushButton {
+        <string notr="true">toolBox {
+}
+
+toolBox QPushButton {
     color: #fff
 }
 
-QToolBox QPushButton:focus {
+toolBox:::QPushButton:hover {
     background-color: #0b5ed7;
     
 }
 
-QToolBox QPushButton: pressed {
+toolBox:::QPushButton: checked {
     background-color: #fff;
-    color: #000000
+    color: #70a932
 }</string>
        </property>
        <property name="currentIndex">
